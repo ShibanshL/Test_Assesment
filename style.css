@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+    background: rgb(250, 250, 250);
+}
+.main_container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.form_container{
+    height: 100%;
+    width:100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.form_1{
+    height: 70vh;
+    width:40vh;
+    background: rgb(209, 209, 209);
+    border-radius: 20px;
+    /* border: 2px solid black; */
+    display: grid;
+    align-items:center;
+    justify-content: center;
+}
+.display_points{
+    /* border: 1px solid black; */
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 1em;
+    display: grid;
+    align-items:center;
+    justify-content: center;
+    grid-gap:1em;
+}
+.contents{
+    /* border: 1px solid black; */
+    width:100%;
+    margin-top: 3em;
+    display: grid;
+    align-items:center;
+    justify-content: center;
+    grid-gap:1em;
+}
+.email{
+    width:100%;
+    background: white;
+    border-radius: 10px;
+    padding:10px;
+
+    /* border: 1px solid grey; */
+    cursor: move;
+    opacity: 1;
+}
+.phone{
+    /* margin-top: 1em; */
+    width:100%;
+    background: white;
+    border-radius: 10px;
+    padding:10px;
+    /* border: 1px solid grey; */
+    cursor: move;
+    opacity: 0;
+}
+.main{
+    opacity:1;
+}
+#submit{
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    color:white;
+    background: coral;
+}
+#submit:hover{
+    transition: 0.25s ease;
+    background: rgb(253, 101, 46);
+    cursor: pointer;
+
+}

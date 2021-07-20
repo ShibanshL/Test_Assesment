@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='style.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js" integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Form Assesment</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="form_container">
+            <form class="form_1">
+                <div class="display_points">
+                    <h2>E-mail</h2>
+                    <input type="checkbox" id="email_c" onclick={check()} checked=true name="email">
+                    <h2>Phone-Number</h2>
+                    <input type="checkbox" id="phone_c" onclick={ph_check()} name="phone">
+
+                </div>
+                <!-- <h1 class="main">Nothing here, click one of the two ot both</h1> -->
+                <div class="contents">
+                    <div class="email">
+                        <label for="fname">Email :</label><br>
+                        <input type="email" id="email" name="email" placeholder="First Name"><br>
+                        <label for="lname">Password :</label><br>
+                        <input type="password" id="password" name="password" placeholder="Last Name"><br><br>
+                    </div>
+                    <div class="phone">
+                        <label for="lname">Phone-Number :</label><br> 
+                        <input type="text" id="phone_number" name="phone" placeholder="Phone Number"><br><br>
+                    </div>
+                </div>
+                <input type="submit" onclick={handleSub()} id="submit" value="Log In">
+            </form>
+        </div>
+    </div>
+    <script src='app.js'></script>
+</body>
+</html>
